@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assert/css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" class="nav-brand text-dark">Farm Management System</a>
+            </div>
+
+        </div>
+    </nav>
+    </header>
+
+    <!-- /header -->
+
+
+    <!-- main site -->
+    <main id="site-main">
+
+            <div class="container">
+                <div class="nav d-flex justify-between">
+                    <div class="filter">
+                        <a href="/" class="border-shadow">
+                            
+                        <span class="text-gradient">
+                            
+                            <i class="fas fa-angle-double-left"></i>
+                            View All Batches
+
+                        </span>
+                        </a>
+                   </div>
+                </div>
+                <div class="form-title text-center">
+
+                    <h2 class="text-dark">
+                        New Batch
+                    </h2>
+                    <span class="text-light">
+                        use the below form to add new batch
+                    </span>
+                </div>
+                <!-- form handling -->
+
+                <form action="/" method="POST" id="update_batch">
+                    <div class="new_user">
+                        <div class="form-group">
+                            <label for="batchSpacie">Batch Specie :</label>
+                            <input type="hidden" name="id" value="">
+                            <input type="text" name="batchSpecie" value="" placeholder=" Batch Specie" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="batchSource">Batch Source :</label>
+                            
+                            <input type="text" name="batchSource" value="" placeholder=" Batch Source" >
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="SourceContact">Source Contact :</label>
+                            <br>
+                            
+                            <input type="tel" name="sourceContact" value="" placeholder=" Source Contact" >
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="numberOfBirds">Number of Birds :</label>
+                            <br>
+                            <input type="num" name="birdNUmber" value="" placeholder=" Number of birds" >
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="batchArrival">Batch Arrival Date :</label>
+                            <br>
+                            <input type="date" name="batchArrivalDate" value="" placeholder="date of arrival" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <button  type="submit" class="btn text-dark update">Save</Button>
+                            
+                            
+                        </div>
+
+                    </div>
+
+
+                
+                
+                </form>
+
+                <!-- /form handling -->
+            </div>
+    </main>
+
+    <!-- /main site -->
+
+</body>
+</html>

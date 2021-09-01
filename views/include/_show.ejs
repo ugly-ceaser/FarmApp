@@ -1,0 +1,27 @@
+<% for(var i=0; i<batch.length; i++){%>
+
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= batch[i].batchSpecie %></td>
+    
+    <td><%= batch[i].batchSource %></td>
+    <td><%= batch[i].sourceContact %></td>
+
+    <td><%= batch[i].numberOfBirds %></td>
+    <td> <%= batch[i].batchArrivalDate %> </td>
+    
+    <td>
+        <a href="" class="btn border-shadow viewmore">
+            <span class="text-gradient"><i class="far fa-eye"></i></span>
+        </a>
+
+        <a href="/update-batch/" class="btn border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-pen"></i></span>
+        </a>
+        
+    
+    </td>
+    
+</tr>
+
+<% } %>

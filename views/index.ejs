@@ -1,0 +1,88 @@
+
+<!-- include header -->
+<%- include('include/_header')%>
+
+<!-- /include header -->
+
+
+  <!-- main site -->
+  <main id="site-main">
+
+    <div class="container">
+        <div class="nav d-flex justify-between">
+            <a href="/create-batch" class="border-shadow">
+            <span class="text-gradient">
+                New Batch
+                <i class="fas fa-plus-circle"></i>
+
+            </span>
+            </a>
+        </div>
+        <!-- form handling -->
+
+        <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Batch Id
+                    </th>
+
+                    <th>
+                        Batch Specie
+                    </th>
+                    
+                    <th>
+                        Batch Source
+                    </th>
+
+                    <th>
+                        Source Contact
+                    </th>
+
+                    <th>
+                        Number of Birds
+                    </th>
+
+                    <th>
+                        Batch Arrival Date
+                    </th>
+
+                    <th>
+                        Action 
+                    </th>
+
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <!-- include table -->
+                <%- include('include/_show') %>
+
+                <!-- /include table -->
+               
+            </tbody>
+
+        </table>
+        
+        </form>
+        
+
+        <!-- /form handling -->
+    </div>
+</main>
+
+<!-- /main site -->
+ 
+
+
+
+
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+
+<!-- /include footer -->
