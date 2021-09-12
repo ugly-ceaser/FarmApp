@@ -1,0 +1,104 @@
+<!-- include header -->
+<%- include('include/_header')%>
+
+<!-- /include header -->
+
+    <!-- /header -->
+
+
+    <!-- main site -->
+    <main id="site-main">
+
+        <div class="container">
+            <div class="nav d-flex justify-between">
+                <a href="/" class="border-shadow">
+                <span class="text-gradient">
+                    
+                    <i class="fas fa-angle-double-left"></i>
+                    back
+
+                </span>
+                </a>
+            </div>
+
+
+
+           <div class="dflexrow">
+            
+            
+
+        
+            
+                <a href="/" class="border-shadow">
+                <span class="text-gradient">
+                    Veiw Record 
+                    <i class="fas fa-plus-circle"></i>
+
+                </span>
+                </a>
+
+            </div>
+
+            <form action="/api/record" method="POST" id="record_batch">
+                <div class="new_user">
+
+                    <div class="form-group">
+                        <label for="numbersold">  Dead  :</label>
+                        <br>
+                        
+                        <input type="num" name="dead" value="" placeholder=" number of dead birds" >
+                        <input type="hidden" name="id" value=""  >
+                        <input type="hidden" name="key" value=""  >
+                    </div>
+
+                   
+                    <div class="form-group">
+                        <label for="numbersold">  Sold  :</label>
+                        <br>
+                        
+                        <input type="num" name="sold" value="" placeholder=" number of sold birds" >
+                    </div>
+            
+                    
+                    <div class="form-group">
+                        <label for="SourceContact">Symptoms :</label>
+                        <br>
+                        
+                        <input type="text" name="symptoms" value="" placeholder=" symptoms" >
+                    </div>
+            
+                    
+                    <div class="form-group">
+                        <label for="numberOfBirds">mediction :</label>
+                        <br>
+                        <input type="text" name="mediction" value="" placeholder=" Medication" >
+                    </div>
+            
+                    
+                    <div class="form-group">
+                        <label for="batchArrival"> Date :</label>
+                        <br>
+                        <input type="date" name="recorddate" value="" placeholder="date of record" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <button  type="submit" class="btn text-dark update">Upload</Button>
+                        
+                        
+                    </div>
+            
+                </div>
+            
+            
+            
+            
+            </form>
+
+
+            
+    </main>
+
+    <!-- /main site -->
+
+</body>
+</html>

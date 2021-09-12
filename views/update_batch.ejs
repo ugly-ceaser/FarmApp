@@ -32,18 +32,21 @@
         </div>
         <!-- add user form -->
 
-        <form action="/" method="POST" id="update_batch">
+        <form method= "POST" id="update_batch">
             <div class="new_user">
                 <div class="form-group">
+                   
+                    <input type="text" name="id" value="<%= batch._id %>" hidden >
+                </div>
+                <div class="form-group">
                     <label for="batchSpacie">Batch Specie :</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="batchSpecie" value="" placeholder=" Batch Specie" >
+                    <input type="text" name="batchSpecie" value="<%= batch.batchSpecie %>" placeholder=" Batch Specie" >
                 </div>
         
                 <div class="form-group">
                     <label for="batchSource">Batch Source :</label>
-                    
-                    <input type="text" name="batchSource" value="" placeholder=" Batch Source" >
+                    <input type="hidden" value="<%= batch._id %>" name="id">
+                    <input type="text" name="batchSource" value="<%= batch.batchSource %>" placeholder=" Batch Source" >
                 </div>
         
                 
@@ -51,22 +54,22 @@
                     <label for="SourceContact">Source Contact :</label>
                     <br>
                     
-                    <input type="tel" name="sourceContact" value="" placeholder=" Source Contact" >
+                    <input type="tel" name="sourceContact" value="<%= batch.sourceContact %>" placeholder=" Source Contact" >
                 </div>
         
                 
                 <div class="form-group">
                     <label for="numberOfBirds">Number of Birds :</label>
                     <br>
-                    <input type="num" name="birdNUmber" value="" placeholder=" Number of birds" >
+                    <input type="num" name="numberOfBirds" value="<%= batch.numberOfBirds %>" placeholder=" Number of birds" >
                 </div>
         
                 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="batchArrival">Batch Arrival Date :</label>
                     <br>
-                    <input type="date" name="batchArrivalDate" value="" placeholder="date of arrival" >
-                </div>
+                    <input type="date" name="batchArrivalDate" value="<%= batch.batchArrivalDate %>" placeholder="date of arrival" >
+                </div> -->
                 
                 <div class="form-group">
                     <button  type="submit" class="btn text-dark update">Save</Button>
@@ -86,7 +89,6 @@
 </main>
 
 <!-- /main site -->
-
 
 
 

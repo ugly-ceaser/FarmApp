@@ -27,90 +27,75 @@
     <!-- main site -->
     <main id="site-main">
 
-            <div class="container">
-                <div class="nav d-flex justify-between">
-                    <a href="/create-batch" class="border-shadow">
-                    <span class="text-gradient">
-                        New Batch
-                        <i class="fas fa-plus-circle"></i>
+        <form action="/api/record" method="POST" id="record_batch">
+            <div class="new_user">
 
-                    </span>
-                    </a>
+                <div class="form-group">
+                    <label for="numbersold">  Dead  :</label>
+                    <br>
+                    
+                    <input type="num" name="dead" value="" placeholder=" number of dead birds" >
+                    <input type="hidden" name="id" value=""  >
+                    <input type="hidden" name="key" value=""  >
                 </div>
-                <!-- form handling -->
 
-                <form action="/" method="POST">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>
-                                Batch Id
-                            </th>
-
-                            <th>
-                                Batch Specie
-                            </th>
-                            
-                            <th>
-                                Batch Source
-                            </th>
-
-                            <th>
-                                Source Contact
-                            </th>
-
-                            <th>
-                                Number of Birds
-                            </th>
-
-                            <th>
-                                Batch Arrival Date
-                            </th>
-
-                            <th>
-                                Action 
-                            </th>
-
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Agrited</td>
-                            
-                            <td>Dunamis</td>
-                            <td>07067179619</td>
-
-                            <td>100</td>
-                            <td>12/04/2012</td>
-                            
-                            <td>
-                                <a href="" class="btn border-shadow viewmore">
-                                    <span class="text-gradient"><i class="far fa-eye"></i></span>
-                                </a>
-
-                                <a href="" class="btn border-shadow delete">
-                                    <span class="text-gradient"><i class="fas fa-pencil"></i></span>
-                                </a>
-                                
-                            
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-
-                </table>
+               
+                <div class="form-group">
+                    <label for="numbersold">  Sold  :</label>
+                    <br>
+                    
+                    <input type="num" name="sold" value="" placeholder=" number of sold birds" >
+                </div>
+        
                 
-                </form>
-
-                <!-- /form handling -->
+                <div class="form-group">
+                    <label for="SourceContact">Symptoms :</label>
+                    <br>
+                    
+                    <input type="text" name="symptoms" value="" placeholder=" symptoms" >
+                </div>
+        
+                
+                <div class="form-group">
+                    <label for="numberOfBirds">mediction :</label>
+                    <br>
+                    <input type="text" name="mediction" value="" placeholder=" Medication" >
+                </div>
+        
+                
+                <div class="form-group">
+                    <label for="batchArrival"> Date :</label>
+                    <br>
+                    <input type="date" name="date" value="" placeholder="date of record" >
+                </div>
+                
+                <div class="form-group">
+                    <button  type="submit" class="btn text-dark update">Upload</Button>
+                    
+                    
+                </div>
+        
             </div>
-    </main>
+        
+        
+        
+        
+        </form>
 
-    <!-- /main site -->
+           
 
+                
+                
+                
+                      
+
+                        
+                    
+               
+
+                    
+               
+
+                
 </body>
 </html>

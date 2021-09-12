@@ -104,7 +104,7 @@ font-weight:bold;
      margin: 0.2em;
  }
 
- .table td:hover{
+ .table tr:hover{
      background-color:#06d6a0;
  }
 
@@ -249,6 +249,133 @@ font-weight:bold;
 
 }
 #add_batch .form-group button{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+   background-color:#06d6a0;
+
+}
+
+.dflexrow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: .7rem;
+    margin-bottom:.7rem;
+    /* border: 1px solid black; */
+
+}
+
+
+
+
+#record_batch
+ .form-group{
+    margin: .4em 0;
+
+}
+
+
+
+#record_batch .form-group input[type="text"]{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+
+#record_batch .form-group input[type="num"]{
+    width:40%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group input[type="date"]{
+    width:30%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group button{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+    background-color:#06d6a0; 
+
+}
+
+#record_batch .form-group button:hover{
+    color:white;
+    background-color:#053629; 
+
+}
+
+#record_batch .form-group{
+    margin: .4em 0;
+
+}
+
+#record_batch .form-group input[type="text"]{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group input[type="tel"]{
+    width:40%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group input[type="num"]{
+    width:40%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group input[type="date"]{
+    width:30%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius:.2em;
+
+}
+#record_batch .form-group button{
     width:100%;
     padding: .6em 1em;
     margin: .5em 0;

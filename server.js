@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const connectDB = require('./server/database/connection')
+const recordconnectDB = require('./server/database/connection')
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.use(morgan('tiny'));
 //mongoDb connection
 
 connectDB();
+
+recordconnectDB();
 
 
 //parse request to bodyParser
@@ -45,5 +48,5 @@ app.use('/', require('./server/routes/router'))
 
 
 app.listen(PORT,() =>{
-    console.log('listening on http://localhost:${PORT}')
+    console.log(`listening on http://localhost:${PORT}`)
 })
